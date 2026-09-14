@@ -5,7 +5,8 @@ let socket: Socket | null = null
 /** Single shared connection so route changes do not open extra sockets. */
 export function getSocket(): Socket {
   if (!socket) {
-    const backendUrl = 'http://localhost:3000'
+    const backendUrl =
+  process.env.NEXT_PUBLIC_SHADOWCHAT_URL || 'http://localhost:3000'
 
     socket = io(backendUrl, {
       path: '/socket',
