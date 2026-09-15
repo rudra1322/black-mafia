@@ -112,12 +112,7 @@ export default function JoinPage() {
                 <span className="text-[var(--color-muted)]">Share the code. Talk. Vanish.</span>
                 <span className="sc-caret ml-1 text-[var(--color-accent)]">_</span>
               </h1>
-              <p className="mt-5 max-w-[46ch] text-[15px] leading-7 text-[var(--color-muted)]">
-                ShadowChat rooms are addressed by a cryptographically random code, not by your
-                network address. Recent messages are held in temporary PostgreSQL storage so a
-                backend restart does not lose your room, and everything is deleted when the room
-                expires.
-              </p>
+              
 
               <dl className="mt-8 grid gap-3 sm:grid-cols-3">
                 {FACTS.map((fact) => (
@@ -218,7 +213,7 @@ export default function JoinPage() {
         </div>
 
         <footer className="flex flex-wrap items-center justify-between gap-3 border-t border-[var(--color-line)] pt-5 text-[11px] text-[var(--color-faint)]">
-          <span>College security project · original implementation</span>
+          <span>Zero Identity · Pure Communication</span>
           <span className="font-[family-name:var(--font-mono)]">40-bit room entropy · temporary storage, deleted on expiry</span>
         </footer>
       </div>
