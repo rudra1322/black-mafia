@@ -1355,7 +1355,7 @@ footer i {
   
     /* BlackMafia central core */
     .core-wrap {
-      order: 2;
+      order: 0;
       width: 100%;
       height: 260px;
       min-height: 260px;
