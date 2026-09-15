@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { ArrowRight, Dices, KeyRound, ShieldCheck, Terminal, UserRound } from 'lucide-react'
+import { ArrowRight, Dices, ShieldCheck, Terminal } from 'lucide-react'
 import {
   formatRoomCode,
   isValidRoomCode,
@@ -139,9 +139,8 @@ export default function JoinPage() {
                 <label className="flex flex-col gap-2">
                   <span className="sc-label">Handle</span>
                   <span className="relative block">
-                    <UserRound className="pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-[var(--color-faint)]" />
                     <input
-                      className="sc-field pl-10"
+                      className="sc-field"
                       value={handle}
                       onChange={(event) => {
                         setHandle(event.target.value.slice(0, 24))
@@ -162,10 +161,8 @@ export default function JoinPage() {
                 <label className="flex flex-col gap-2">
                   <span className="sc-label">Room code</span>
                   <span className="relative block">
-                    <KeyRound className="pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-[var(--color-faint)]" />
                     <input
-                      className="sc-field pl-10 pr-[112px] font-[family-name:var(--font-mono)] tracking-[0.24em] uppercase"
-                      value={formatRoomCode(code)}
+                      className="sc-field pr-[112px] font-[family-name:var(--font-mono)] tracking-[0.24em] uppercase"                      value={formatRoomCode(code)}
                       onChange={(event) => {
                         const raw = event.target.value
                         setCode(normalizeRoomCode(raw))
