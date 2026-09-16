@@ -1507,3 +1507,145 @@ footer i {
       margin: 9px auto 0;
     }
   }
+
+  /* BlackMafia mobile visual layer */
+/* BlackMafia ShadowChat visual layer */
+.sc-grid {
+  background-color: #02060b;
+  background-image:
+    linear-gradient(rgba(0, 220, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 220, 255, 0.035) 1px, transparent 1px);
+  background-size: 34px 34px;
+}
+
+/* Ambient cyan glow */
+.sc-glow::before {
+  background: radial-gradient(
+    ellipse at 50% 0%,
+    rgba(0, 220, 255, 0.12),
+    transparent 70%
+  );
+}
+
+/* Main panels */
+.sc-card {
+  border: 1px solid rgba(0, 220, 255, 0.18);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(5, 18, 27, 0.94),
+      rgba(10, 9, 20, 0.94)
+    );
+  box-shadow:
+    0 0 24px rgba(0, 220, 255, 0.035),
+    inset 0 0 30px rgba(0, 220, 255, 0.018);
+}
+
+/* Connect panel */
+.sc-card.sc-rise {
+  border-color: rgba(0, 220, 255, 0.28);
+  box-shadow:
+    0 0 30px rgba(0, 220, 255, 0.06),
+    0 0 55px rgba(139, 61, 255, 0.035),
+    inset 0 0 35px rgba(0, 220, 255, 0.02);
+}
+
+/* Labels */
+.sc-label {
+  color: rgba(0, 220, 255, 0.62);
+  letter-spacing: 0.2em;
+}
+
+/* Inputs */
+.sc-field {
+  border-color: rgba(0, 220, 255, 0.16);
+  background: rgba(2, 8, 14, 0.88);
+  box-shadow: inset 0 0 18px rgba(0, 220, 255, 0.015);
+}
+
+.sc-field:focus {
+  border-color: rgba(0, 220, 255, 0.55);
+  background: rgba(2, 10, 17, 0.96);
+  box-shadow:
+    0 0 0 1px rgba(0, 220, 255, 0.08),
+    0 0 18px rgba(0, 220, 255, 0.08);
+}
+
+/* Generate button */
+.sc-btn-ghost {
+  border-color: rgba(0, 220, 255, 0.22);
+  background: rgba(0, 220, 255, 0.025);
+  color: rgba(233, 238, 244, 0.72);
+}
+
+.sc-btn-ghost:hover {
+  background: rgba(0, 220, 255, 0.08);
+  border-color: rgba(0, 220, 255, 0.5);
+  color: #00dcff;
+  box-shadow: 0 0 14px rgba(0, 220, 255, 0.08);
+}
+
+/* Connect button */
+.sc-btn-primary {
+  background: linear-gradient(
+    90deg,
+    #00dcff 0%,
+    #00bfe8 48%,
+    #8b3dff 100%
+  );
+  color: #02060b;
+  border: 1px solid rgba(0, 220, 255, 0.45);
+  box-shadow:
+    0 0 18px rgba(0, 220, 255, 0.18),
+    0 0 28px rgba(139, 61, 255, 0.12);
+}
+
+.sc-btn-primary:hover {
+  background: linear-gradient(
+    90deg,
+    #22e3ff 0%,
+    #12c9ef 48%,
+    #a45cff 100%
+  );
+}
+
+/* Disabled connect button */
+.sc-btn-primary:disabled {
+  background: #101923;
+  color: rgba(233, 238, 244, 0.34);
+  border-color: rgba(0, 220, 255, 0.08);
+  box-shadow: none;
+}
+
+/* Information cards */
+dl .sc-card {
+  border-color: rgba(0, 220, 255, 0.16);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(5, 18, 27, 0.9),
+      rgba(14, 8, 24, 0.92)
+    );
+}
+
+dl .sc-card:nth-child(2) {
+  border-color: rgba(139, 61, 255, 0.2);
+}
+
+dl .sc-card:nth-child(3) {
+  border-color: rgba(0, 220, 255, 0.2);
+}
+
+/* Fact values */
+dl .sc-card dd {
+  color: rgba(233, 238, 244, 0.82);
+}
+
+/* Version chip */
+.sc-chip {
+  border-color: rgba(0, 220, 255, 0.16);
+  background: rgba(2, 8, 14, 0.72);
+  color: rgba(0, 220, 255, 0.62);
+  box-shadow: 0 0 14px rgba(0, 220, 255, 0.035);
+}
+
